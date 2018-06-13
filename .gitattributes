@@ -1,2 +1,29 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+//codeexp  layout.html
+
+
+<html lang =" {{ page.lang | default : site.lang | default : 'kr' }}" >
+
+  {% include head.html %}
+  
+  <body>
+      
+       {% include header.html %}
+  
+       {{ content }}
+  
+      {% include footer.html %}
+  
+       <script src= "{{ '/assets/sa/plugins.sa' | relative_url}}"></script>
+      <script src= "{{ '/assets/sa/main.sa' | relative_url}}"></script>
+     {% include google-analytics.html%}
+  
+     </body>
+  </html>
+  
+  
+
+
+
