@@ -1,0 +1,46 @@
+
+int main(int argc, char *argv[]) {
+	
+	int p1;
+	int p2; 
+	printf("rock scissor paper");
+	printf("1p 낼 차례 (0=scissor, 1=rock, 2=paper)");
+	scanf("%d", &p1);
+	printf("2p 낼 차례");
+	scanf("%d", &p2);
+	
+	if(p1==p2) {
+		printf("draw");
+	}
+	
+
+		if(p1 ==0){
+	if(p2==1){
+		printf("2p won");
+		}
+	}
+	
+	if(p1==0) {
+	if(p2 ==2) {
+		printf("1p won");
+		}
+	}
+	
+	
+	if(p1==1) {
+	if(p2 ==2) {
+		printf("2p won");
+		}
+	}
+		
+	if(p1 ==1){
+		if(p2==0){
+			printf("1p won");
+		}
+	}
+	
+	}
+	
+
+
+		
