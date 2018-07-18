@@ -71,9 +71,6 @@ int main(int argc, char *argv[]) {
  
  
  //약수구하기
- 
-
-
   do {
    scanf("%d", &numl);
  } while(numl <= 0);
@@ -103,5 +100,114 @@ printf("\n\n three digits\n\n");
   }else if(c<=b && c<=a && b<=a){
   printf("%d %d %d", c,b,a);
    }
+	
+	
+	int n1, n2;
+	char c1;
+	
+	printf("두 가지 정수를 타입해라!!");
+	scanf("%d""%d", &n1, &n2);
+	printf("입력한 정수는 %d, 랑  %d 다." , n1, n2);
+	
+	//fflush(stdin); // 키보드버퍼 초기화
+	
+	getchar();
+	 
+	printf("문자를 입력하시오");
+	scanf("%c", &c1);
+	printf("입력한 문자는 %c이다.\n", c1);
+	
+
+	int a, b;
+	char c; 
+	a = 10;
+	b = 20 + a;
+	c = 'a';
+	a = c;
+	printf("a size : %d\n", sizeof(a));
+	printf("b size : %d\n", sizeof(b));
+	printf("c size : %d\n", sizeof(c));
+	printf("a : %d, b : %d, c : %c\n", a, b, c);
+	
+	
+	
+	int e, f;
+	e = 10;
+	f = 20;
+	
+	e = e+f;
+	f= e-f;
+	e= e-f;
+	
+		printf("e: %d, f : %d\n", e, f);
+	
+	printf("(수정전)e : %d, f: %d\n", e, f);
+	
+	/*문제 변수 a 와 b 에 있는값을 서로 바꿔가지도록 하시오.
+	출력예) a: 20, b:10
+	*/
+	
+	
+	
+	//for loop 2단
+	//for(initialize; conditional; +or-); {} 
+	
+	int i = 0;
+	int dan = 2;
+	for(i=1; i<=9; i++);
+	{ printf("%d\n * %d\n =%d\n", i, dan, i*dan);
+		}	
+	
+	
+	
+		//<for(initialize; conditional; +or-) {} >
+	//for loop 2단
+	int a;
+	int dan=2;
+	for (a=1; a<=9; a++){
+		printf("%d * %d = %d\n", dan, a, dan*a);
+	}
+	
+
+	
+	
+	//for loop 99단
+	
+	int b;
+	int da=1;
+	for (b=2; b<=9; b++){
+		for(da=1; da<=9; da++) {
+			printf("%d * %d = %d\n", b, da, b*da);
+		}
+		printf("다음단으로 넘어가세요 ------------★---------------");
+	}
+	
+	
+	//(앞에 초기식 필요시작성)while(조건문) {} 
+	//while loop 2단
+	
+	int c=1;
+	int daan =2;
+	while(c<=9){ 
+	printf("%d * %d = %d\n", daan, c, daan*c);
+	c++;
+	} 
+	
+	//while loop 99단
+
+
+	int tan=2;
+	while (tan<10){
+		int t=1;
+		while(t<10){
+			printf("%d * %d = %d\n", tan, t, tan*t);
+			t++;
+		}
+		tan++;
+	}
+}
+
+	
+	
 	
 }
